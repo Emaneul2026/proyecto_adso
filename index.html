@@ -1,1 +1,202 @@
-<h1>Mi Proyecto ADSO</h1>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Logica Proposicional ADSO SENA</title>
+<style>
+body{font-family:Arial,Helvetica,sans-serif;background:#f5f7f8;color:#333;margin:0}
+.container{max-width:1200px;margin:auto;padding:20px}
+.hero{background:linear-gradient(135deg,#39A900,#006B3F);color:#fff;padding:40px;border-radius:20px;text-align:center}
+.card{background:#fff;border-radius:16px;padding:24px;margin:18px 0;box-shadow:0 2px 8px rgba(0,0,0,.08)}
+h1,h2,h3{margin-top:0}
+.green{color:#39A900}
+.note{background:#f0fff0;border-left:8px solid #39A900;padding:15px;border-radius:8px}
+.warn{background:#fff9e8;border-left:8px solid #ffc107;padding:15px;border-radius:8px}
+table{width:100%;border-collapse:collapse}
+th{background:#39A900;color:#fff}
+th,td{border:1px solid #ddd;padding:10px;text-align:center}
+code,pre{background:#263238;color:#fff;padding:12px;border-radius:8px;display:block;overflow:auto}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+<h1>Bases Conceptuales de Lógica Proposicional</h1>
+<h2>GA3-220501093-AA1-EV01</h2>
+<p>Tecnología en Análisis y Desarrollo de Software - ADSO</p>
+<p>Duración estimada: 1 hora y 30 minutos</p>
+</div>
+
+<div class="card">
+<h2 class="green">🎯 Resultado de aprendizaje</h2>
+<p>Comprender los fundamentos de la lógica proposicional y reconocer su aplicación en la construcción de algoritmos, programas y sistemas de información.</p>
+</div>
+
+<div class="card">
+<h2 class="green">⚽ Introducción</h2>
+<p>Los computadores toman decisiones mediante reglas lógicas. Cuando iniciamos sesión, realizamos una compra o enviamos una actividad en una plataforma virtual, existen condiciones que deben evaluarse como verdaderas o falsas.</p>
+<p>Durante esta sesión utilizaremos ejemplos relacionados con el Mundial de Fútbol para comprender los conceptos fundamentales de la lógica proposicional.</p>
+</div>
+
+<div class="card">
+<h2 class="green">💡 Actividad de Apertura</h2>
+<p>Analice las siguientes afirmaciones:</p>
+<ul>
+<li>Colombia ganó su partido.</li>
+<li>Brasil ganó su partido.</li>
+<li>Argentina clasificó a la siguiente ronda.</li>
+</ul>
+<p>¿Cada afirmación puede ser verdadera o falsa? Si la respuesta es sí, estamos frente a proposiciones.</p>
+</div>
+
+<div class="card">
+<h2 class="green">📚 1. ¿Qué es una proposición?</h2>
+<div class="note">
+Una proposición es una afirmación que puede clasificarse como verdadera o falsa.
+</div>
+<br>
+<table>
+<tr><th>Expresión</th><th>¿Es proposición?</th></tr>
+<tr><td>Bogotá es la capital de Colombia</td><td>Sí</td></tr>
+<tr><td>2 + 2 = 5</td><td>Sí</td></tr>
+<tr><td>¿Quién ganó el Mundial?</td><td>No</td></tr>
+<tr><td>¡Qué golazo!</td><td>No</td></tr>
+<tr><td>Messi juega para Argentina</td><td>Sí</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2 class="green">🔤 2. Variables proposicionales</h2>
+<p>Utilizamos letras para representar proposiciones.</p>
+<ul>
+<li><b>p</b> = Colombia ganó el partido.</li>
+<li><b>q</b> = Brasil ganó el partido.</li>
+<li><b>r</b> = Argentina clasificó.</li>
+</ul>
+<p>Esto permite construir expresiones más complejas sin escribir frases completas.</p>
+</div>
+
+<div class="card">
+<h2 class="green">✅ 3. Valores de verdad</h2>
+<table>
+<tr><th>Símbolo</th><th>Significado</th></tr>
+<tr><td>V</td><td>Verdadero</td></tr>
+<tr><td>F</td><td>Falso</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2 class="green">🔗 4. Conectores lógicos</h2>
+<h3>Conjunción (∧)</h3>
+<p>Se lee "Y". Ejemplo: Colombia ganó Y Brasil ganó.</p>
+
+<h3>Disyunción (∨)</h3>
+<p>Se lee "O". Ejemplo: Colombia ganó O Brasil ganó.</p>
+
+<h3>Negación (¬)</h3>
+<p>Representa lo contrario de una proposición.</p>
+
+<h3>Implicación (→)</h3>
+<p>Se lee "Si... entonces...". Ejemplo: Si Colombia gana, entonces clasifica.</p>
+</div>
+
+<div class="card">
+<h2 class="green">📊 5. Tablas de verdad</h2>
+
+<h3>Conjunción (∧)</h3>
+<table>
+<tr><th>p</th><th>q</th><th>p ∧ q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>F</td></tr>
+<tr><td>F</td><td>V</td><td>F</td></tr>
+<tr><td>F</td><td>F</td><td>F</td></tr>
+</table>
+
+<h3>Disyunción (∨)</h3>
+<table>
+<tr><th>p</th><th>q</th><th>p ∨ q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>V</td></tr>
+<tr><td>F</td><td>V</td><td>V</td></tr>
+<tr><td>F</td><td>F</td><td>F</td></tr>
+</table>
+
+<h3>Negación (¬)</h3>
+<table>
+<tr><th>p</th><th>¬p</th></tr>
+<tr><td>V</td><td>F</td></tr>
+<tr><td>F</td><td>V</td></tr>
+</table>
+
+<h3>Implicación (→)</h3>
+<table>
+<tr><th>p</th><th>q</th><th>p → q</th></tr>
+<tr><td>V</td><td>V</td><td>V</td></tr>
+<tr><td>V</td><td>F</td><td>F</td></tr>
+<tr><td>F</td><td>V</td><td>V</td></tr>
+<tr><td>F</td><td>F</td><td>V</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2 class="green">⚽ Ejercicios resueltos con el Mundial</h2>
+<p><b>p</b> = Colombia ganó.</p>
+<p><b>q</b> = Brasil ganó.</p>
+<p><b>r</b> = Argentina clasificó.</p>
+
+<ul>
+<li><b>p ∧ q</b>: Colombia ganó y Brasil ganó.</li>
+<li><b>p ∨ q</b>: Colombia ganó o Brasil ganó.</li>
+<li><b>¬p</b>: Colombia no ganó.</li>
+<li><b>p → r</b>: Si Colombia ganó, entonces Argentina clasificó.</li>
+<li><b>(p ∧ q) ∨ r</b>: Colombia y Brasil ganaron, o Argentina clasificó.</li>
+</ul>
+</div>
+
+<div class="card">
+<h2 class="green">💻 Aplicación en ADSO</h2>
+<p>La lógica proposicional es la base de la programación.</p>
+<pre>if usuario == "admin" and clave_correcta:
+    acceso = True</pre>
+
+<pre>if actividad_entregada:
+    mostrar_calificacion()</pre>
+
+<pre>if promedio >= 3.0:
+    estado = "Aprobado"</pre>
+</div>
+
+<div class="card">
+<h2 class="green">🧠 Practiquemos juntos</h2>
+<ol>
+<li>Defina tres proposiciones relacionadas con el Mundial.</li>
+<li>Construya una conjunción.</li>
+<li>Construya una disyunción.</li>
+<li>Construya una negación.</li>
+<li>Construya una implicación.</li>
+<li>Determine si cada expresión es verdadera o falsa.</li>
+</ol>
+</div>
+
+<div class="card">
+<h2 class="green">📝 Taller de clase</h2>
+<ol>
+<li>Determine cuáles expresiones son proposiciones.</li>
+<li>Represente mediante variables las proposiciones identificadas.</li>
+<li>Construya ejemplos utilizando ∧, ∨, ¬ y →.</li>
+<li>Complete las tablas de verdad.</li>
+<li>Explique cómo se aplica la lógica proposicional en el desarrollo de software.</li>
+</ol>
+</div>
+
+<div class="card warn">
+<h2>🏆 Conclusión</h2>
+<p>La lógica proposicional constituye la base del pensamiento computacional. Antes de escribir código, todo desarrollador debe aprender a representar situaciones mediante proposiciones y operadores lógicos.</p>
+<p><b>Antes de programar, debemos aprender a pensar lógicamente.</b></p>
+</div>
+
+</div>
+</body>
+</html>
